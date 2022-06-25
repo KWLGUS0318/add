@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+@mixin inputbox {
+  width: 280px;
+  height: 40px;
+  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+}
+
+
+
+
+@media(max-width:510px) {
+  #root {
+    width: 474px;
+    height: 926px;
+    background-color: #C4DAF6;
+    font-family: 'Nanum Pen Script', cursive;
+
+    &>img {
+      position: relative;
+      top: 100px;
+      left: 110px;
+    }
+
+
+  }
+
+  /*로그인 박스 */
+  .log-box {
+    width: 396px;
+    height: 576px;
+    border: 10px solid #509BF6;
+    background-color: #fff;
+    border-radius: 30vw;
+    position: relative;
+    top: 150px;
+    left: 40px;
+
+  }
+
+
+  /*sign in/ sign up 박스 */
+
+  .sign {
+    display: flex;
+  }
+
+  .sign-in {
+    width: 130px;
+    height: 50px;
+    background-color: #fff;
+    border: 3px solid #C4DAF6;
+    color: #000;
+    border-radius: 30vw;
+    text-align: center;
+    line-height: 2.5;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+    left: 55px;
+    margin-right: 5vw;
+    transform: translate(-10%, 30%);
+    cursor: pointer;
+
+
+    &:hover {
+      background-color: #509BF6;
+      color: #fff;
+      transition: 1s;
+
+    }
+  }
+
+  .sign-up {
+    width: 130px;
+    height: 50px;
+    background-color: #509BF6;
+    border: 3px solid #C4DAF6;
+    color: #fff;
+    border-radius: 30vw;
+    position: relative;
+    top: 50px;
+    left: 45px;
+  }
+}
+
+.box {
+  width: inherit;
+  height: 100px;
+  position: relative;
+  top: 120px;
+  z-index: 2;
+
+  &>p {
+    text-align: center;
+    line-height: 2;
+    color: #4100F5;
+    font-size: 1.5rem;
+
+  }
+}
+
+.email {
+  width: 70%;
+  height: 100px;
+  position: relative;
+  top: -90px;
+  left: 60px;
+  z-index: 2;
+
+  &>p {
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 30px;
+  }
+
+  &>input {
+    margin-top: 20px;
+    width: 300.79px;
+    height: 61.45px;
+    margin-left: 20px;
+
+    background: #FFF;
+    border: 3px solid #C4DAF6;
+    box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
+  }
+}
+
+.confirm {
+  width: 120px;
+  height: 70px;
+  position: relative;
+  bottom: 60px;
+  left: 240px;
+  border-radius: 6vw;
+  background: linear-gradient(180deg, #509BF6 0%, #C4DAF6 49.82%, #509BF6 100%);
+  border: 3PX SOLID #fff;
+  color: #fff;
+  cursor: pointer;
+
+  
+}
+

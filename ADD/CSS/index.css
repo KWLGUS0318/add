@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 510px) {
@@ -10,13 +11,13 @@
     width: 474px;
     height: 926px;
     background-color: #C4DAF6;
+    font-family: 'Nanum Pen Script', cursive;
   }
   #root > img {
     position: relative;
     top: 100px;
     left: 110px;
   }
-
   /*로그인 박스 */
   .log-box {
     width: 396px;
@@ -28,12 +29,13 @@
     top: 150px;
     left: 40px;
   }
-
   /*sign in/ sign up 박스 */
   .sign {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-  .sign > button {
+  .sign > a > button {
     width: 130px;
     height: 50px;
     background-color: #fff;
@@ -41,40 +43,68 @@
     border-radius: 30vw;
     text-align: center;
     line-height: 2.5;
-    cursor: pointer;
     position: relative;
     top: 35px;
-    left: 55px;
+    left: 85px;
     margin-right: 5vw;
-    transform: translate(-10%, 30%);
+    -webkit-transform: translate(-10%, 30%);
+            transform: translate(-10%, 30%);
     cursor: pointer;
   }
-  .sign > button:hover {
+  .sign > A > button:hover {
     background-color: #509BF6;
     color: #fff;
+    -webkit-transition: 1s;
     transition: 1s;
   }
 }
+
+.sign-in {
+  width: 130px;
+  height: 50px;
+  background-color: #509BF6;
+  border: 3px solid #C4DAF6;
+  color: #fff;
+  border-radius: 30vw;
+  position: relative;
+  top: 50px;
+  left: 45px;
+}
+
 /* id  박스 */
 .box {
   margin: 100px 0px 50px 60px;
 }
+
 .box > input {
   width: 280px;
   height: 40px;
-  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 34px;
+  border: 3px solid  #C4DAF6;
+}
+
+.box > label {
+  font-size: 2rem;
 }
 
 /* password 박스 */
 .box1 {
-  margin: 40px 0px 0px 50px;
+  margin: 40px 0px 0px 60px;
 }
+
 .box1 > input {
   width: 280px;
   height: 40px;
-  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 34px;
+  border: 3px solid  #C4DAF6;
+}
+
+.box1 > label {
+  font-size: 2rem;
 }
 
 .confirm {
@@ -84,7 +114,10 @@
   bottom: -50px;
   left: 200px;
   border-radius: 6vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#509BF6), color-stop(49.82%, #C4DAF6), to(#509BF6));
   background: linear-gradient(180deg, #509BF6 0%, #C4DAF6 49.82%, #509BF6 100%);
   border: 3PX SOLID #fff;
+  color: #fff;
   cursor: pointer;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
